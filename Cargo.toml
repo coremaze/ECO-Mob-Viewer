@@ -1,0 +1,14 @@
+[package]
+name = "eco-mob-viewer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.28.1"
+read-process-memory = "0.1.6"
+sysinfo = "0.30.13"
+
+[profile.release]
+strip = true
+lto = true
+panic = "abort"
